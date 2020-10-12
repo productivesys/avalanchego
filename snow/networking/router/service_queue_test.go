@@ -1,5 +1,5 @@
-// // (c) 2019-2020, Ava Labs, Inc. All rights reserved.
-// // See the file LICENSE for licensing terms.
+// (c) 2019-2020, Ava Labs, Inc. All rights reserved.
+// See the file LICENSE for licensing terms.
 
 package router
 
@@ -78,7 +78,6 @@ func TestMultiLevelQueueSendsMessages(t *testing.T) {
 		}
 	}
 
-	// Ensure that the 6th message was never added to the queue
 	select {
 	case <-semaChan:
 		t.Fatal("Semaphore channel should have been empty after reading all messages from the queue")
